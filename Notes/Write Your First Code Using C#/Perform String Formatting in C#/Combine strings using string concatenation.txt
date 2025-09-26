@@ -1,0 +1,13 @@
+    String concatenation is "programmer speak" for simply combining two or more string values into a new string value. Unlike addition, the second value is appended to the end of the first value, and so on. In the following exercise, you'll write code to concatenate string values together.
+
+1.Concatenate a literal string and a variable
+    
+    string name = "Bob";
+    string message = "hee" + name;
+    Console.WriteLine(message); // hee Bob
+
+2.Concatenate multiple variables and literal strings
+    string firstName = "Bob";
+    string secondName = "Hari";
+    string message = firstName + " " + secondName;
+    Console.WriteLine(message);

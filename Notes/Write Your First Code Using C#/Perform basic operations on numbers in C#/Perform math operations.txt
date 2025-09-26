@@ -1,0 +1,31 @@
+Perform basic math operations
+    Write code to perform addition, subtraction, multiplication, and division with integers
+    int sum = 7 + 5;
+    int difference = 7 - 5;
+    int product = 7 * 5;
+    int quotient = 7 / 5;
+
+    Console.WriteLine("Sum: " + sum);
+    Console.WriteLine("Difference: " + difference);
+    Console.WriteLine("Product: " + product);
+    Console.WriteLine("Quotient: " + quotient);
+
+Add code to perform division using literal decimal data.
+    decimal decimalQuotient = 7.0m / 5;
+    Console.WriteLine($"Decimal quotient: {decimalQuotient}");
+
+
+Write code to determine the remainder after integer division
+    Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+    Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
+
+Order of operations     
+
+    In math, PEMDAS is an acronym that helps students remember the order of operations. The order is:
+
+    Parentheses (whatever is inside the parenthesis is performed first)
+    Exponents
+    Multiplication and Division (from left to right)
+    Addition and Subtraction (from left to right)
+
+    C# follows the same order as PEMDAS except for exponents. While there's no exponent operator in C#, you can use the System.Math.Pow method. The module "Call methods from the .NET Class Library using C#" will feature this method and others.

@@ -1,0 +1,29 @@
+C# is a case-sensitive language, meaning that the C# compiler considers the words console and Console as different as the words cat and dog. Sometimes, the error message can be a bit misleading. You'll need to understand the true reason why the error exists, and that comes through learning more about C#'s syntax.
+
+  Ex: 
+  Console.WriteLine("Hello world");
+
+  //compile time error 
+  console.WriteLine("Hello World");
+
+  Similarly, if you used single-quotation marks (') to surround the literal string Hello World! like so:
+  
+  //compile time error
+  Console.WriteLine('Hellow');
+
+  Display a new message:-
+  Console.WriteLine("HelloW");
+  Console.Write("Hello");
+  Console.WriteLine("Hello");  
+
+  //Refer the document for Console.WriteLine():https://learn.microsoft.com/en-us/dotnet/api/system.console.writeline?view=net-9.0#system-console-writeline
+
+  //Refer the dicument for Console.Write(): https://learn.microsoft.com/en-us/dotnet/api/system.console.write 
+
+The difference between Console.Write and Console.WriteLine:-
+
+The three new lines of code you added demonstrated the difference between the Console.WriteLine() and Console.Write methods.
+
+Console.WriteLine() prints a message to the output console. At the end of the line, it adds a line feed similar to pressing Enter or Return to create a new line.
+
+To print to the output console, but without adding a line feed at the end, you use the second technique, Console.Write(). So, the next call to Console.Write() prints another message to the same line.

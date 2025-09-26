@@ -1,0 +1,45 @@
+Increment and decrement
+Frequently, you'll need to increment and/or decrement values, especially when you're writing looping logic or code that interacts with a data structure.
+
+    The += operator adds and assigns the value on the right of the operator to the value on the left of the operator. So, lines two and three in the following code snippet are the same:
+    
+    int value = 0;     // value is now 0.
+    value = value + 5; // value is now 5.
+    value += 5;        // value is now 10.
+
+    int value = 0;     // value is now 0.
+    value = value + 1; // value is now 1.
+    value++;           // value is now 2.
+
+    Operators like +=, -=, *=, ++, and -- are known as compound assignment operators because they compound some operation in addition to assigning the result to the variable. The += operator is specifically termed the addition assignment operator.
+
+Write code to increment and decrement a value
+
+    int value = 1;
+
+    value = value + 1;
+    Console.WriteLine("First increment: " + value);
+
+    value += 1;
+    Console.WriteLine("Second increment: " + value);
+
+    value++;
+    Console.WriteLine("Third increment: " + value);
+
+    value = value - 1;
+    Console.WriteLine("First decrement: " + value);
+
+    value -= 1;
+    Console.WriteLine("Second decrement: " + value);
+
+    value--;
+    Console.WriteLine("Third decrement: " + value);
+
+Use the increment operator before and after the value
+
+    int value = 1;
+    value++;
+    Console.WriteLine("First: " + value);
+    Console.WriteLine($"Second: {value++}");
+    Console.WriteLine("Third: " + value);
+    Console.WriteLine("Fourth: " + (++value));
