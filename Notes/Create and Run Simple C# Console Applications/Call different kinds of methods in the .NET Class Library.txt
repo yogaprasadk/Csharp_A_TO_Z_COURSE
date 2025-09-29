@@ -1,0 +1,41 @@
+In the Visual Studio Code Editor, to create a code sample that implements methods of the System.Random and System.Console classes, enter the following code:
+    Random dice = new Random();
+    int roll = dice.Next(1, 7);
+    Console.WriteLine(roll);
+
+    you include a reference to the Console class and call the Console.WriteLine() method directly. However, you use a different technique for calling the Random.Next() method. The reason why you're using two different techniques is because some methods are "stateful" and others are "stateless". You examine the difference between stateful and stateless methods in the next section.
+
+    stateful vs stateless
+    state: the term state is used to describe the condition of the execution environment at a specific moment in time.
+
+    As your code executes line by line, values are stored in variables. At any moment during execution, the current state of the application is the 
+    collection of all values stored in memory.
+
+    stateless methods dont rely on the current state of the applications.
+    stateless methods are otherwise known as Static Methods.
+
+    in otherwords Stateless methods are implemented so that they can work without referencing or changing any values stored in memory,
+
+    Example: Console.WriteLine() method
+
+    stateful methods must have access to state of application to work properly.
+    stateful methods rely on current state of applications.
+    stateful methods is otherwise known as instance methods.
+
+    stateful methods are built in such a way that they rely on values stored in memory by previous lines of code that have already been executed. Or they modify the state of the application by updating values or storing new values in memory.
+
+    Stateful (instance) methods keep track of their state in fields, which are variables defined on the class. Each new instance of the class gets its own copy of those fields in which to store state.
+
+    A single class can support both stateful and stateless methods. However, when you need to call stateful methods, you must first create an instance of the class so that the method can access state.
+
+Creating an instance of a class:
+
+    An instance of a class is called as an object. To create a new instance of a class, you use the new operator. Consider the following line of code that creates a new instance of the Random class to create a new object called dice:
+
+    Random dice = new Random();
+
+    new operator does several important things:
+
+    It first requests an address in the computer's memory large enough to store a new object based on the Random class.
+    It creates the new object, and stores it at the memory address.
+    It returns the memory address so that it can be saved in the dice object.

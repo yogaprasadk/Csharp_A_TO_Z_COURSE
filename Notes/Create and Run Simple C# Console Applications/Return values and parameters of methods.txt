@@ -1,0 +1,25 @@
+Return Values:
+    1.Void Methods:
+    Some methods are designed to complete their function and end "quietly".
+    
+Method parameters and arguments in the calling statement
+
+    When you call a method, you can pass in values that the method will use to complete its task. These values are called arguments. The method uses the arguments to assign values to the parameters that are defined in the method's signature. A method can require one or more parameters to accomplish its task, or none at all.
+
+    Methods use a method signature to define the number of parameters that the method will accept, as well as the data type of each parameter. The coding statement that calls the method must adhere the requirements specified by the method signature. Some methods provide options for the number and type of parameters that the method accepts.
+
+    Random dice = new Random();
+    int roll = dice.Next(1, 7);
+    Console.WriteLine(roll);
+    
+    
+    -> Next(1,7)
+    1 - lower bound
+    7 - upper bound
+    These parameters are used to configure the lower and upper boundaries for the random number that's returned
+
+    
+    in the Parameters section, you can read that the maxValue parameter is the "exclusive upper bound of the random number to be generated." An exclusive upper bound means that if you want numbers no larger than 10, you must pass in the value 11.
+
+    You can also read in the next line: "maxValue must be greater than or equal to 0." What happens if you ignore this statement? You can see in the Exceptions section that the method will return an ArgumentOutOfRangeException when maxValue is less than 0.
+
