@@ -1,0 +1,21 @@
+Expression    
+    An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements comprise one or more expressions.
+
+Evaluating equality and inequality
+    One of the most common code evaluations is a check to see whether two values are equal. When checking for equality, you'll locate the equality operator == between the two values being checked. If the values on either side of the equality operator are equivalent, then the expression will return true. Otherwise, it will return false.
+
+    Conversely, you might also need to check whether two values aren't equal. To check for inequality, you'll use the inequality operator != between the two values.
+
+    You might wonder why you need both equality and inequality operators. The reason will become clearer as you learn how to create branching statements and begin to write real world code. Two operators that perform opposite tasks allow you to be more expressive and compact.
+
+What is logical negation?
+
+    The term "Logical Negation" refers to the unary negation operator !. Some people call this operator the "not operator". When you place the ! operator before a conditional expression (or any code that's evaluated to either true or false), it forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces true , if the operand evaluates to false , and false , if the operand evaluates to true.
+
+conditional operator:
+    The conditional operator ?: evaluates a Boolean expression and returns one of two results depending on whether the Boolean expression evaluates to true or false. The conditional operator is commonly referred to as the ternary conditional operator.
+
+    syntax:
+    <evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
+
+    

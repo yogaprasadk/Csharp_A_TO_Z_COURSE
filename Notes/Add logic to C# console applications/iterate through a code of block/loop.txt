@@ -1,0 +1,10 @@
+Create and configure for iteration loops
+     the for statement is another iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code
+    
+What is the for statement?
+    The for statement iterates through a code block a specific number of times. This level of control makes the for statement unique among the other iteration statements. The foreach statement iterates through a block of code once for each item in a sequence of data like an array or collection. The while statement iterates through a block of code until a condition is met.
+
+    Furthermore, the for statement gives you much more control over the process of iteration by exposing the conditions for iteration.
+
+What is the do-while statement?
+    The do-while statement executes a statement or a block of statements while a specified Boolean expression evaluates to true. Because that expression is evaluated after each execution of the loop, a do-while loop executes one or more times

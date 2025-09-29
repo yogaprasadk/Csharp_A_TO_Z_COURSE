@@ -1,0 +1,37 @@
+Create a variable inside of a code block
+    bool flag = true;
+    if (flag)
+    {
+        int value = 10;
+        Console.WriteLine($"Inside the code block: {value}");
+    }
+
+    // Inside the code block: 10
+
+Attempt to access a variable outside the code block in which it's declared
+
+    bool flag = true;
+ 
+    if (flag)
+    {
+        int value = 10;
+        Console.WriteLine($"Inside the code block: {value}");
+    }
+    Console.WriteLine($"Outside the code block: {value}");
+
+    // Program.cs(7,46): error CS0103: The name 'value' does not exist in the current context
+
+Move the variable declaration above the code block
+
+    bool flag = true;
+    int value;
+
+    if (flag)
+    {
+    Console.WriteLine($"Inside the code block: {value}");
+    }
+
+    value = 10;
+    Console.WriteLine($"Outside the code block: {value}");
+
+    // Program.cs(6,49): error CS0165: Use of unassigned local variable 'value'

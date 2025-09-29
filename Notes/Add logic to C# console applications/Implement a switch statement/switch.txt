@@ -1,0 +1,20 @@
+A switch statement is a C# selection statement that provides an alternative to an if-elseif-else branching construct. The switch statement provides advantages over an if-elseif-else construct when evaluating a single value against a list of known matching values.
+
+
+How does a switch statement work?
+    The switch statement chooses one section of code to execute from a list of possible switch sections. The selected switch section is chosen based on a pattern match with the statement's match expression.
+
+    switch (fruit)
+{
+    case "apple":
+        Console.WriteLine($"App will display information for apple.");
+        break;
+
+    case "banana":
+        Console.WriteLine($"App will display information for banana.");
+        break;
+
+    case "cherry":
+        Console.WriteLine($"App will display information for cherry.");
+        break;
+}
